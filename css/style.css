@@ -276,7 +276,7 @@ h2[id], section[id], article[id] { scroll-margin-top: 24px; }
 .feature-title { font-size: clamp(32px, 4vw, 46px); line-height: 1.15; }
 
 /* Research directions */
-.strands { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 40px 56px; }
+.strands { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 40px 48px; }
 .strand { border-top: 1px solid var(--ink); padding-top: 20px; display: flex; flex-direction: column; gap: 10px; }
 .strand-work { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 16px; line-height: 1.5; color: var(--ink-soft); }
 .strand-work .in-development { font-style: italic; }
