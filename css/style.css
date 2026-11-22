@@ -282,3 +282,4 @@ h2[id], section[id], article[id] { scroll-margin-top: 24px; }
 .strand-work .in-development { font-style: italic; }
 .figure-group { display: flex; flex-direction: column; gap: 20px; }
 .figure-group-title { font-family: var(--sans); font-size: 18px; font-weight: 700; border-bottom: 1px solid var(--rule); padding-bottom: 10px; }
+.credit { font-size: 14px; color: var(--ink-soft); }
