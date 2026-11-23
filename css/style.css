@@ -186,12 +186,6 @@ figcaption { font-size: 16px; color: var(--ink-soft); margin-top: 14px; }
 
 /* ---------- Small screens ---------- */
 
-@media (max-width: 640px) {
-  body { font-size: 17px; }
-  .panel { margin: 0 12px; }
-  .wrap { padding: 56px 20px; }
-  .site-nav { gap: 0 22px; font-size: 16px; }
-  .site-header { padding: 20px 20px 16px; }
 }
 
 /* Score figures */
@@ -283,3 +277,42 @@ h2[id], section[id], article[id] { scroll-margin-top: 24px; }
 .figure-group { display: flex; flex-direction: column; gap: 20px; }
 .figure-group-title { font-family: var(--sans); font-size: 18px; font-weight: 700; border-bottom: 1px solid var(--rule); padding-bottom: 10px; }
 .credit { font-size: 14px; color: var(--ink-soft); }
+
+/* ---------- Phones (keep this block last so it wins) ---------- */
+@media (max-width: 640px) {
+  body { font-size: 15.5px; line-height: 1.6; }
+  .panel { margin: 0 10px; }
+  .wrap { padding: 40px 18px; }
+
+  /* Header: compact, name and switch on one line, menu below */
+  .site-header { padding: 16px 18px 10px; gap: 6px 16px; align-items: center; }
+  .wordmark { font-size: 22px; }
+  .header-right { display: contents; }
+  .wordmark { order: 1; }
+  .theme-toggle { order: 2; margin-left: auto; }
+  .site-nav { order: 3; width: 100%; }
+  .site-nav { gap: 0 16px; font-size: 14px; }
+  .site-nav a { padding: 8px 0; }
+  .theme-toggle { font-size: 13px; min-height: 32px; padding: 0 10px; }
+
+  /* Type scale */
+  h1 { font-size: 32px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 17px; }
+  .feature-title { font-size: 28px; }
+  .program-title { font-size: 20px; }
+  .subtitle { font-size: 17px; }
+  .lead { font-size: 16.5px; }
+  .label { font-size: 13.5px; }
+  .role { font-size: 15px; }
+  .more { font-size: 15px; }
+  figcaption, .clip p, .program, .strand-work, .on-this-page { font-size: 14.5px; }
+  .bio-card p { font-size: 15px; }
+  .figure-group-title { font-size: 15.5px; }
+  .footer-name { font-size: 19px; }
+  .footer-links { font-size: 14.5px; }
+
+  /* Tighter vertical rhythm */
+  .split, .sides, .news { gap: 32px; }
+  .stack { gap: 12px; }
+}
